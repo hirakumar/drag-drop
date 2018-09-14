@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title></title>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/style.css">
+	<script src="js/jquery-3.3.1.slim.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/popper.min.js"></script>
+
+</head>
+<body>
+	<h1>Drag and Drop JS</h1>
+	<div class="container">
+	<div class="mainContainer row">
+        <div data-name="backlog" class="eles col-sm backlog board-column-wrapp" data-type="origin">
+            <div class="ele card" draggable="true" data-type="item" data-id="3">
+        <div class="card-header">
+            <h4 class="my-0 font-weight-normal">Sanjeev <span>0 <i class="fa fa-comment-o" aria-hidden="true"></i>
+</span></h4>
+        </div>
+        <div class="card-body d-none">
+            <p>Sanjeev</p>
+            <a href="#" class="request-detail" action="http://web.itr2.test/request/detail/3">
+                Detail
+            </a>
+        </div>
+        <a href="#" class="close delete-request" data-id="3"><i class="fa fa-times-circle" aria-hidden="true"></i></a>
+    </div>
+        </div>
+        <div data-name="development" class="dragContainer col-sm development board-column-wrapp" data-type="container">
+            <div class="ele card" draggable="true" data-type="item" data-id="4">
+        <div class="card-header">
+            <h4 class="my-0 font-weight-normal">Kumar <span>1 <i class="fa fa-comment-o" aria-hidden="true"></i>
+</span></h4>
+        </div>
+        <div class="card-body d-none">
+            <p>test</p>
+            <a href="#" class="request-detail" action="http://web.itr2.test/request/detail/4">
+                Detail
+            </a>
+        </div>
+        <a href="#" class="close delete-request" data-id="4"><i class="fa fa-times-circle" aria-hidden="true"></i></a>
+    </div>
+        </div>
+        <div data-name="ready-to-do" class="dragContainer col-sm readytodo board-column-wrapp" data-type="container">
+            <div class="ele card" draggable="true" data-type="item" data-id="5">
+        <div class="card-header">
+            <h4 class="my-0 font-weight-normal">Yadav <span>0 <i class="fa fa-comment-o" aria-hidden="true"></i>
+</span></h4>
+        </div>
+        <div class="card-body d-none">
+            <p>test</p>
+            <a href="#" class="request-detail" action="http://web.itr2.test/request/detail/5">
+                Detail
+            </a>
+        </div>
+        <a href="#" class="close delete-request" data-id="5"><i class="fa fa-times-circle" aria-hidden="true"></i></a>
+    </div>
+        </div>
+        <div data-name="testing" class="dragContainer col-sm testing board-column-wrapp" data-type="container">
+            <div class="ele card" draggable="true" data-type="item" data-id="2">
+        <div class="card-header">
+            <h4 class="my-0 font-weight-normal">Metting <span>3 <i class="fa fa-comment-o" aria-hidden="true"></i>
+</span></h4>
+        </div>
+        <div class="card-body d-none">
+            <p>Hi all</p>
+            <a href="#" class="request-detail" action="http://web.itr2.test/request/detail/2">
+                Detail
+            </a>
+        </div>
+        <a href="#" class="close delete-request" data-id="2"><i class="fa fa-times-circle" aria-hidden="true"></i></a>
+    </div>
+        </div>
+        <div data-name="solved" class="dragContainer col-sm solved board-column-wrapp" data-type="container">
+                    </div>
+
+    </div>
+	</div>
+	<script src="js/dragdrop.js"></script>
+	<script>new DragDrop('.mainContainer');</script>
+</body>
+</html>

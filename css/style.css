@@ -1,0 +1,46 @@
+[draggable=false] {
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+  /* Required to make elements draggable in old WebKit */
+  -khtml-user-drag: element;
+  -webkit-user-drag: element;
+}
+  .eles{ min-height:300px;}
+  .mainContainer{ }
+  .dragContainer{border:solid 2px #ccc; }
+  .ele,.eleShadow{}
+  .eletop{display:block;margin:0px 0; text-align:center;  height:30px; padding:10px;}
+
+  .eleShadow{opacity:0.6}
+  .ele:hover{background:#f5f5f5}
+  .ele:last-child:hover{background:none}
+.blackEle{display:block;   margin:0px 0; text-align:center;  height:25px; border:solid 3px #f5f5f5}
+.dropped{border:solid 1px green}
+.end{border:solid 1px green}
+.dragging{border-top:solid 3px black}
+.dragStart{opacity:0.5; border:solid 1px ccc}
+.emptyEle{display:block;margin:0px 0; text-align:center;  height:30px; padding:10px;}
+.dragStart a{}
+
+div[draggable='false']{
+pointer-events: none;
+}
+div[draggable='false'] a{}
+.dragContainer.dragging{border:dotted 3px #ccc; }
+.backlog .card-header{background:#f8f9fa}
+.development .card-header{background:#17a2b8}
+.readytodo .card-header{background:#007bff}
+.testing .card-header{background:#6c757d}
+.solved .card-header{background:#28a745}
+	.card-header {
+padding: 0.75rem 1.25rem;
+margin-bottom: 0;
+background-color: rgba(0, 0, 0, 0.03);
+border-bottom: 1px solid white;
+}
+.card-header h4 {
+    color: #333;
+    font-size: 14px;
+}
